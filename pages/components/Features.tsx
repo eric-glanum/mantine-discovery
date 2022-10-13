@@ -1,5 +1,19 @@
-import { createStyles, Title, SimpleGrid, Text, Button, ThemeIcon, Grid, Col } from '@mantine/core';
-import { IconReceiptOff, IconFlame, IconCircleDotted, IconFileCode } from '@tabler/icons';
+import {
+  createStyles,
+  Title,
+  SimpleGrid,
+  Text,
+  Button,
+  ThemeIcon,
+  Grid,
+  Col,
+} from "@mantine/core";
+import {
+  IconReceiptOff,
+  IconFlame,
+  IconCircleDotted,
+  IconFileCode,
+} from "@tabler/icons";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -12,32 +26,34 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 900,
     lineHeight: 1.1,
     marginBottom: theme.spacing.md,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
   },
 }));
 
 const features = [
   {
     icon: IconReceiptOff,
-    title: 'Free and open source',
-    description: 'All packages are published under MIT license, you can use Mantine in any project',
+    title: "Free and open source",
+    description:
+      "All packages are published under MIT license, you can use Mantine in any project test test ",
   },
   {
     icon: IconFileCode,
-    title: 'TypeScript based',
-    description: 'Build type safe applications, all components and hooks export types',
+    title: "TypeScript based",
+    description:
+      "Build type safe applications, all components and hooks export types",
   },
   {
     icon: IconCircleDotted,
-    title: 'No annoying focus ring',
+    title: "No annoying focus ring",
     description:
-      'With new :focus-visible selector focus ring will appear only when user navigates with keyboard',
+      "With new :focus-visible selector focus ring will appear only when user navigates with keyboard",
   },
   {
     icon: IconFlame,
-    title: 'Flexible',
+    title: "Flexible",
     description:
-      'Customize colors, spacing, shadows, fonts and many other settings with global theme object',
+      "Customize colors, spacing, shadows, fonts and many other settings with global theme object",
   },
 ];
 
@@ -50,7 +66,7 @@ export default function FeaturesTitle() {
         size={44}
         radius="md"
         variant="gradient"
-        gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+        gradient={{ deg: 133, from: "blue", to: "cyan" }}
       >
         <feature.icon size={26} stroke={1.5} />
       </ThemeIcon>
@@ -71,13 +87,14 @@ export default function FeaturesTitle() {
             A fully featured React components library for your next project
           </Title>
           <Text color="dimmed">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
+            Build fully functional accessible web applications faster than ever
+            – Mantine includes more than 120 customizable components and hooks
+            to cover you in any situation
           </Text>
 
           <Button
             variant="gradient"
-            gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+            gradient={{ deg: 133, from: "blue", to: "cyan" }}
             size="lg"
             radius="md"
             mt="xl"
@@ -86,7 +103,11 @@ export default function FeaturesTitle() {
           </Button>
         </Col>
         <Col span={12} md={7}>
-          <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+          <SimpleGrid
+            cols={2}
+            spacing={30}
+            breakpoints={[{ maxWidth: "md", cols: 1 }]}
+          >
             {items}
           </SimpleGrid>
         </Col>
